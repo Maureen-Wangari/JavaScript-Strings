@@ -16,7 +16,7 @@ console.log('insert:', insert);
 
 
 //QuestionC
-const story = "The quick brown fox jumps over the lazy fox"
+const story = "The quick brown fox jumps over the lazy dog"
 console.log(('story:', story.match(/the/)).length);
 console.log(('story:', story.match(/brown/)).length);
 
@@ -34,4 +34,17 @@ let b = "amazing"
 let c = "undERneath"
 console.log('b',  b.toLowerCase());
 console.log('c',  c.toLowerCase());
+
+
+function titleCase(str){
+str= str.toLowerCase().split(' ');
+for (let p = 0; p< str.length; p++){
+    str[p] = str[p].charAt(0).toUpperCase() +str[p].slice(1); 
+}
+return str.join(' ');
+}
+console.log(titleCase("A wonderful world"));
+
+
+
 
